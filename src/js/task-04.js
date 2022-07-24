@@ -4,14 +4,14 @@ const valueEl = document.querySelector("#value");
 
 let counterValue = 0;
 
-function func() {
+function subtractionFunction() {
   counterValue -= 1;
   valueEl.textContent = counterValue;
 }
-function addF() {
+function addFunction() {
   counterValue += 1;
   valueEl.textContent = counterValue;
 }
 
-btnDecrement.addEventListener("click", func);
-btnIncrement.addEventListener("click", addF);
+btnDecrement.addEventListener("click", subtractionFunction);
+btnIncrement.addEventListener("click", addFunction);
